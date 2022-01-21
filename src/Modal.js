@@ -1,8 +1,6 @@
-import React from "react";
-
 import closeButtonIcon from "./assets/cancelIcon.png";
 
-const Modal = ({ id = "modal", onClose = () => {}, children }) => {
+function Modal({ id = "modal", onClose = () => {}, children }) {
   const handleOutsideClick = (e) => {
     if (e.target.id === id) onClose();
   };
@@ -20,6 +18,6 @@ const Modal = ({ id = "modal", onClose = () => {}, children }) => {
       </div>
     </div>
   );
-};
+}
 
 export default Modal;

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import "./style/css/App.css";
 
@@ -10,7 +10,7 @@ import buttonsIcon from "./assets/buttonsIcon.png";
 import cancelIcon from "./assets/cancelIcon.png";
 import confirmIcon from "./assets/confirmIcon.png";
 
-const App = () => {
+function App() {
   const [pokemon, setPokemon] = useState("");
   const [pokemonData, setPokemonData] = useState([]);
   const [pokemonType, setPokemonType] = useState();
@@ -121,6 +121,6 @@ const App = () => {
       ) : null}
     </div>
   );
-};
+}
 
 export default App;
