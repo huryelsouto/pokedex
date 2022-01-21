@@ -192,8 +192,8 @@
 // CELULAR
 @media screen and (min-width: 321px) {
   .App {
-    height: 720px;
-    max-height: 1280px;
+    min-height: 720px;
+    height: 100vh;
     width: 100%;
   }
 
@@ -206,11 +206,11 @@
     }
 
     .lightIcon {
-      height: 50%;
+      height: 65%;
       margin-top: 1%;
     }
     .pokeballIcon {
-      width: 20%;
+      width: 15%;
       height: 50%;
     }
   }
