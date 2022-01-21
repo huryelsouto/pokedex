@@ -166,7 +166,7 @@
 // CELULAR
 @media screen and (min-width: 0px) {
   .App {
-    height: 526px;
+    min-height: 720px;
     width: 100%;
   }
 
@@ -179,20 +179,22 @@
     }
 
     .lightIcon {
-      height: 70%;
+      height: 50%;
       margin-top: 1%;
     }
     .pokeballIcon {
       width: 20%;
+      height: 50%;
     }
   }
 }
 
-// TABLET
-@media screen and (min-width: 769px) {
+// CELULAR
+@media screen and (min-width: 321px) {
   .App {
-    min-height: 526px;
-    width: 420px;
+    height: 720px;
+    max-height: 1280px;
+    width: 100%;
   }
 
   .header {
@@ -200,24 +202,19 @@
     height: 18%;
 
     svg {
-      width: 420px;
+      width: 100%;
     }
 
     .lightIcon {
-      height: 90%;
+      height: 50%;
       margin-top: 1%;
     }
     .pokeballIcon {
-      width: 16%;
-      height: 70%;
+      width: 20%;
+      height: 50%;
     }
   }
-
-  .options-container {
-    width: 80%;
-  }
 }
-
 // TABLET
 @media screen and (min-width: 426px) {
   .App {
