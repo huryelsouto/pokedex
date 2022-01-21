@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import axios from "axios";
 import "./style/css/App.css";
 
@@ -13,7 +13,6 @@ import confirmIcon from "./assets/confirmIcon.png";
 function App() {
   const [pokemon, setPokemon] = useState("");
   const [pokemonData, setPokemonData] = useState([]);
-  const [pokemonType, setPokemonType] = useState();
 
   const getPokemon = async () => {
     const toArray = [];
@@ -22,7 +21,6 @@ function App() {
       const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
       const res = await axios.get(url);
       toArray.push(res.data);
-      setPokemonType(res.data.types[0].type.name);
       setPokemonData(toArray);
       console.log(res);
     } catch (error) {
@@ -72,14 +70,20 @@ function App() {
           </g>
         </svg>
 
-        <img className="lightIcon" src={lightIcon} />
-        <img className="pokeballIcon" src={pokeballIcon} />
+        <img className="lightIcon" src={lightIcon} alt="lightIcon" />
+        <img className="pokeballIcon" src={pokeballIcon} alt="pokeballIcon" />
       </div>
       <div className="infos">
         <ul>
           {pokemonData.map((data) => (
             <li key="{item}">
-              {<img id="pokemonImage" src={data.sprites["front_default"]} />}
+              {
+                <img
+                  id="pokemonImage"
+                  src={data.sprites["front_default"]}
+                  alt="pokemonImage"
+                />
+              }
             </li>
           ))}
         </ul>
@@ -87,7 +91,7 @@ function App() {
       <div className="options-container">
         <h1>Digite abaixo o nome do pokemon</h1>
         <div className="options">
-          <img className="buttonsIcon" src={buttonsIcon} />
+          <img className="buttonsIcon" src={buttonsIcon} alt="buttonsIcon" />
 
           <form onSubmit={handleSubmit}>
             <label>
@@ -105,11 +109,13 @@ function App() {
               className="cancelIcon"
               src={cancelIcon}
               onClick={cleanPokedex}
+              alt="cancelIcon"
             />
             <img
               className="confirmIcon"
               src={confirmIcon}
               onClick={handleSubmit}
+              alt="confirmIcon"
             />
           </div>
         </div>
