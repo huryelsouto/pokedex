@@ -10,9 +10,10 @@ import buttonsIcon from "./assets/buttonsIcon.png";
 import cancelIcon from "./assets/cancelIcon.png";
 import confirmIcon from "./assets/confirmIcon.png";
 
-function App() {
+const App = () => {
   const [pokemon, setPokemon] = useState("");
   const [pokemonData, setPokemonData] = useState([]);
+  const [pokemonType, setPokemonType] = useState();
 
   const getPokemon = async () => {
     const toArray = [];
@@ -21,6 +22,7 @@ function App() {
       const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
       const res = await axios.get(url);
       toArray.push(res.data);
+      setPokemonType(res.data.types[0].type.name);
       setPokemonData(toArray);
       console.log(res);
     } catch (error) {
@@ -127,6 +129,6 @@ function App() {
       ) : null}
     </div>
   );
-}
+};
 
 export default App;

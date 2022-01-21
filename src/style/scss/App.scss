@@ -101,18 +101,21 @@
 
   .options {
     height: 90%;
-    margin-top: 1%;
+    margin-top: 4%;
 
     display: flex;
     justify-content: space-around;
+    text-align: center;
 
     .buttonsIcon {
       width: 20%;
-      height: 70%;
+      height: 60%;
     }
     .cancelConfirmContainer {
       width: 18%;
       height: 65%;
+
+      margin-top: 3%;
 
       .cancelIcon {
         width: 50%;
@@ -163,7 +166,7 @@
 // CELULAR
 @media screen and (min-width: 0px) {
   .App {
-    height: 100vh;
+    height: 526px;
     width: 100%;
   }
 
@@ -177,15 +180,45 @@
 
     .lightIcon {
       height: 70%;
-      margin-top: 2%;
+      margin-top: 1%;
     }
     .pokeballIcon {
-      width: 14%;
+      width: 20%;
     }
   }
 }
 
-// TABLET - NOTEBOOK P
+// TABLET
+@media screen and (min-width: 769px) {
+  .App {
+    min-height: 526px;
+    width: 420px;
+  }
+
+  .header {
+    width: 100%;
+    height: 18%;
+
+    svg {
+      width: 420px;
+    }
+
+    .lightIcon {
+      height: 90%;
+      margin-top: 1%;
+    }
+    .pokeballIcon {
+      width: 16%;
+      height: 70%;
+    }
+  }
+
+  .options-container {
+    width: 80%;
+  }
+}
+
+// TABLET
 @media screen and (min-width: 426px) {
   .App {
     height: 100vh;
@@ -216,7 +249,7 @@
 }
 
 // NOTEBOOK M
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 769px) {
   .App {
     height: 100vh;
     width: 40%;

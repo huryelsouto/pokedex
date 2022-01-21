@@ -68,15 +68,17 @@
     padding: 0.1rem; }
   .options-container .options {
     height: 90%;
-    margin-top: 1%;
+    margin-top: 4%;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    text-align: center; }
     .options-container .options .buttonsIcon {
       width: 20%;
-      height: 70%; }
+      height: 60%; }
     .options-container .options .cancelConfirmContainer {
       width: 18%;
-      height: 65%; }
+      height: 65%;
+      margin-top: 3%; }
       .options-container .options .cancelConfirmContainer .cancelIcon {
         width: 50%;
         display: block;
@@ -107,7 +109,7 @@
 
 @media screen and (min-width: 0px) {
   .App {
-    height: 100vh;
+    height: 526px;
     width: 100%; }
   .header {
     width: 100%;
@@ -116,9 +118,27 @@
       width: 100%; }
     .header .lightIcon {
       height: 70%;
-      margin-top: 2%; }
+      margin-top: 1%; }
     .header .pokeballIcon {
-      width: 14%; } }
+      width: 20%; } }
+
+@media screen and (min-width: 769px) {
+  .App {
+    min-height: 526px;
+    width: 420px; }
+  .header {
+    width: 100%;
+    height: 18%; }
+    .header svg {
+      width: 420px; }
+    .header .lightIcon {
+      height: 90%;
+      margin-top: 1%; }
+    .header .pokeballIcon {
+      width: 16%;
+      height: 70%; }
+  .options-container {
+    width: 80%; } }
 
 @media screen and (min-width: 426px) {
   .App {
@@ -138,7 +158,7 @@
   .options-container {
     width: 80%; } }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 769px) {
   .App {
     height: 100vh;
     width: 40%; }
