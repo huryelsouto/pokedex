@@ -109,7 +109,7 @@
 
 @media screen and (min-width: 0px) {
   .App {
-    min-height: 700px;
+    min-height: 680px;
     width: 100%; }
   .header {
     width: 100%;
@@ -149,11 +149,11 @@
     .header svg {
       width: 420px; }
     .header .lightIcon {
-      height: 90%;
+      height: 65%;
       margin-top: 1%; }
     .header .pokeballIcon {
       width: 16%;
-      height: 70%; }
+      height: 50%; }
   .options-container {
     width: 80%; } }
 

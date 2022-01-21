@@ -163,10 +163,10 @@
   }
 }
 
-// CELULAR
+// CELULAR P
 @media screen and (min-width: 0px) {
   .App {
-    min-height: 700px;
+    min-height: 680px;
     width: 100%;
   }
 
@@ -189,7 +189,7 @@
   }
 }
 
-// CELULAR
+// CELULAR M
 @media screen and (min-width: 321px) {
   .App {
     height: 100vh;
@@ -230,12 +230,12 @@
     }
 
     .lightIcon {
-      height: 90%;
+      height: 65%;
       margin-top: 1%;
     }
     .pokeballIcon {
       width: 16%;
-      height: 70%;
+      height: 50%;
     }
   }
 
