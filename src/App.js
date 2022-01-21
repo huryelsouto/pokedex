@@ -13,7 +13,6 @@ import confirmIcon from "./assets/confirmIcon.png";
 const App = () => {
   const [pokemon, setPokemon] = useState("");
   const [pokemonData, setPokemonData] = useState([]);
-  const [pokemonType, setPokemonType] = useState();
 
   const getPokemon = async () => {
     const toArray = [];
@@ -22,7 +21,6 @@ const App = () => {
       const url = `https://pokeapi.co/api/v2/pokemon/${pokemon}`;
       const res = await axios.get(url);
       toArray.push(res.data);
-      setPokemonType(res.data.types[0].type.name);
       setPokemonData(toArray);
       console.log(res);
     } catch (error) {
