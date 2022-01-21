@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "./style/css/App.css";
 
-import Modal from "./Modal";
+import Modal from "./Components/Modal/Modal";
 
 import pokeballIcon from "./assets/pokeballIcon.png";
 import lightIcon from "./assets/lightIcon.png";
