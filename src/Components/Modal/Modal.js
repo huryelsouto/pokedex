@@ -1,6 +1,6 @@
 import React from "react";
 
-import closeButtonIcon from "./assets/cancelIcon.png";
+import closeButtonIcon from "../../assets/cancelIcon.png";
 
 const Modal = ({ id = "modal", onClose = () => {}, children }) => {
   const handleOutsideClick = (e) => {
