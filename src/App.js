@@ -11,7 +11,7 @@ import cancelIcon from "./assets/cancelIcon.png";
 import confirmIcon from "./assets/confirmIcon.png";
 
 const App = () => {
-  const [pokemon, setPokemon] = useState("");
+  const [pokemon, setPokemon] = useState("p");
   const [pokemonData, setPokemonData] = useState([]);
 
   const getPokemon = async () => {
@@ -37,7 +37,7 @@ const App = () => {
     e.preventDefault();
     await getPokemon();
     document.getElementById("pokemonImage").style.visibility = "visible";
-    setPokemon("");
+    setPokemon("p");
   };
 
   const cleanPokedex = () => {
