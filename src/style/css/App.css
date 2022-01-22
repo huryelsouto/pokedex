@@ -13,7 +13,6 @@
     position: absolute;
     top: 0; }
   .header .lightIcon {
-    height: 50%;
     margin-left: 1rem;
     z-index: 5; }
   .header .pokeballIcon {
@@ -109,36 +108,31 @@
 
 @media screen and (min-width: 0px) {
   .App {
-    min-height: 680px;
+    min-height: 526px;
     width: 100%; }
   .infos ul {
-    min-height: 300px; }
+    min-height: 150px; }
   .header {
     width: 100%;
     height: 18%; }
     .header svg {
       width: 100%; }
     .header .lightIcon {
-      width: 20%;
+      width: 65px;
+      height: 65px;
       margin-top: 1%; }
     .header .pokeballIcon {
-      width: 15%; } }
+      width: 50px; } }
 
 @media screen and (min-width: 321px) {
   .App {
-    height: 100vh;
-    width: 100%; }
-  .header {
-    width: 100%;
-    height: 18%; }
-    .header svg {
-      width: 100%; }
-    .header .lightIcon {
-      height: 65%;
-      margin-top: 1%; }
-    .header .pokeballIcon {
-      width: 15%;
-      height: 50%; } }
+    height: 100vh; }
+  .header .lightIcon {
+    width: 80px;
+    height: 80px; }
+  .header .pokeballIcon {
+    width: 60px;
+    height: 60px; } }
 
 @media screen and (min-width: 426px) {
   .App {
@@ -150,11 +144,11 @@
     .header svg {
       width: 420px; }
     .header .lightIcon {
-      height: 65%;
-      margin-top: 1%; }
+      width: 80px;
+      height: 80px; }
     .header .pokeballIcon {
-      width: 16%;
-      height: 50%; }
+      width: 60px;
+      height: 60px; }
   .options-container {
     width: 80%; } }
 
@@ -168,11 +162,11 @@
     .header svg {
       width: 40%; }
     .header .lightIcon {
-      height: 65%;
-      margin-top: 1%; }
+      width: 80px;
+      height: 80px; }
     .header .pokeballIcon {
-      width: 16%;
-      height: 50%; }
+      width: 60px;
+      height: 60px; }
   .infos ul li {
     width: 87%; }
   .options-container .options form input {
@@ -188,17 +182,28 @@
     .header svg {
       width: 40%; }
     .header .lightIcon {
-      height: 85%;
-      margin-top: 1%; }
+      width: 120px;
+      height: 120px; }
     .header .pokeballIcon {
-      width: 16%;
-      height: 60%; }
+      width: 90px;
+      height: 90px; }
   .infos ul li {
     width: 87%; }
   .options-container .options form input {
     font-size: 1rem; } }
 
 @media screen and (min-width: 1441px) {
+  .header {
+    width: 100%;
+    height: 18%; }
+    .header svg {
+      width: 40%; }
+    .header .lightIcon {
+      width: 200px;
+      height: 200px; }
+    .header .pokeballIcon {
+      width: 150px;
+      height: 150px; }
   .infos ul li {
     width: 92%; }
   .options-container h1 {
