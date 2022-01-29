@@ -25,6 +25,7 @@ const App = () => {
       console.log(res);
     } catch (error) {
       setIsModalVisible(true);
+      cleanPokedex();
       console.log(error);
     }
   };
@@ -36,12 +37,12 @@ const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await getPokemon();
-    setPokemon("p");
   };
 
   const pokemonNameInput = React.useRef();
   const cleanPokedex = () => {
     pokemonNameInput.current.value = "";
+    setPokemon("p");
     setPokemonData([]);
   };
 
