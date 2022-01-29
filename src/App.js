@@ -36,13 +36,12 @@ const App = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await getPokemon();
-    document.getElementById("pokemonImage").style.visibility = "visible";
     setPokemon("p");
   };
 
+  const pokemonNameInput = React.useRef();
   const cleanPokedex = () => {
-    document.getElementById("pokemonName").value = "";
-    document.getElementById("pokemonImage").style.visibility = "hidden";
+    pokemonNameInput.current.value = "";
     setPokemonData([]);
   };
 
@@ -100,6 +99,7 @@ const App = () => {
                 type="text"
                 onChange={handleChange}
                 placeholder=""
+                ref={pokemonNameInput}
               ></input>
             </label>
           </form>
