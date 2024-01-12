@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/testeexadex/static/css/main.ea85a7ec.css",
-    "main.js": "/testeexadex/static/js/main.803af43d.js",
-    "static/js/787.b4784a00.chunk.js": "/testeexadex/static/js/787.b4784a00.chunk.js",
-    "static/media/lightIcon.png": "/testeexadex/static/media/lightIcon.a9b0acc16a4f82a91ae6.png",
-    "static/media/pokeballIcon.png": "/testeexadex/static/media/pokeballIcon.774abbafa8d08b174185.png",
-    "static/media/buttonsIcon.png": "/testeexadex/static/media/buttonsIcon.b58942b599be4dd7272c.png",
-    "static/media/confirmIcon.png": "/testeexadex/static/media/confirmIcon.9ba5a098be2c207c4ec7.png",
-    "static/media/cancelIcon.png": "/testeexadex/static/media/cancelIcon.56c8e0d86c2bddda7222.png",
-    "index.html": "/testeexadex/index.html",
-    "main.ea85a7ec.css.map": "/testeexadex/static/css/main.ea85a7ec.css.map",
-    "main.803af43d.js.map": "/testeexadex/static/js/main.803af43d.js.map",
-    "787.b4784a00.chunk.js.map": "/testeexadex/static/js/787.b4784a00.chunk.js.map"
+    "main.css": "/pokedex/static/css/main.ea85a7ec.css",
+    "main.js": "/pokedex/static/js/main.bf296634.js",
+    "static/js/787.7e0b23c5.chunk.js": "/pokedex/static/js/787.7e0b23c5.chunk.js",
+    "static/media/lightIcon.png": "/pokedex/static/media/lightIcon.a9b0acc16a4f82a91ae6.png",
+    "static/media/pokeballIcon.png": "/pokedex/static/media/pokeballIcon.774abbafa8d08b174185.png",
+    "static/media/buttonsIcon.png": "/pokedex/static/media/buttonsIcon.b58942b599be4dd7272c.png",
+    "static/media/confirmIcon.png": "/pokedex/static/media/confirmIcon.9ba5a098be2c207c4ec7.png",
+    "static/media/cancelIcon.png": "/pokedex/static/media/cancelIcon.56c8e0d86c2bddda7222.png",
+    "index.html": "/pokedex/index.html",
+    "main.ea85a7ec.css.map": "/pokedex/static/css/main.ea85a7ec.css.map",
+    "main.bf296634.js.map": "/pokedex/static/js/main.bf296634.js.map",
+    "787.7e0b23c5.chunk.js.map": "/pokedex/static/js/787.7e0b23c5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea85a7ec.css",
-    "static/js/main.803af43d.js"
+    "static/js/main.bf296634.js"
   ]
 }
